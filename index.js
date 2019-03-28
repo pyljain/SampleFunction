@@ -21,13 +21,13 @@ exports.index = async (data, context) => {
   // const path = require('path');
   // const fs = require('fs-extra');
   // const os = require('os')
-  
+
   // Creates a GCS client
   const storage = new Storage()
 
   // const workingDir = path.join(os.tmpdir(), 'scratch')
   // await fs.ensureDir(workingDir)
-   
+
   const file = data
   console.log(`  Event ${context.eventId}`)
   console.log(`  Event Type: ${context.eventType}`)
@@ -43,7 +43,7 @@ exports.index = async (data, context) => {
   //   // The path to which the file should be downloaded, e.g. "./file.txt"
   //   destination: `tempLocalPath`
   // }
-  
+
   //Downloads the file
   // const content = await storage
   //   .bucket(file.bucket)
